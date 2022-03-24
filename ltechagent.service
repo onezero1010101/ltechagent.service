@@ -1,0 +1,13 @@
+[Unit]
+Description=LabTech remote agent
+
+[Service]
+PIDFile=/var/run/ltechagent.pid
+Type=simple
+WorkingDirectory=/usr/local/ltechagent
+ExecStart=/usr/local/ltechagent/ltechagent > /dev/null 2>&1 &
+ExecStop=/bin/kill $MAINPID
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
