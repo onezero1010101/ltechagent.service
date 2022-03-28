@@ -1,0 +1,2 @@
+#Check LTechAgent service running
+*/15 * * * * root /root/chk/
