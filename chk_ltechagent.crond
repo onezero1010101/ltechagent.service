@@ -1,2 +1,3 @@
 #Check LTechAgent service running
-*/15 * * * * root /root/chk/
+#Place in /etc/cron.d
+*/15 * * * * root /root/chk_ltechagent.sh
