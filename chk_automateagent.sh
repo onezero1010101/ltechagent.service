@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RESTART="/etc/init.d/ltechagent restart"
+START="/etc/init.d/ltechagent start"
 PGREP="/usr/bin/pgrep"
 PID="ltechagent"
 
@@ -8,6 +8,6 @@ $PGREP ${PID}
 
 if [ $? -ne 0 ] # if ltechagent not running 
 then
- # restart ltechagent
- $RESTART
+ # start ltechagent
+ $START
 fi
