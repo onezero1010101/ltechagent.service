@@ -1,6 +1,5 @@
 #Check LTechAgent service running
 #Place in /etc/cron.d
-#*/15 * * * * root /root/chk_ltechagent.sh
 #Run at 9:05 after agent typically dies
-5 9 * * * root /root/chk_ltechagent.sh
+5 9 * * * root /root/chk_automateagent.sh
 
