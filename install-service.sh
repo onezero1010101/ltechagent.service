@@ -5,4 +5,5 @@
 
 systemctl daemon-reload
 systemctl stop ltechagent
+systemctl enable ltechagent
 systemctl start ltechagent
