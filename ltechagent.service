@@ -8,6 +8,7 @@ WorkingDirectory=/usr/local/ltechagent
 ExecStart=/usr/local/ltechagent/ltechagent > /dev/null 2>&1 &
 ExecStop=/bin/kill $MAINPID
 Restart=always
+RemainAfterExit=yes
 
 [Install]
 WantedBy=multi-user.target
